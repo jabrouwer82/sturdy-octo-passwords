@@ -1,0 +1,38 @@
+@line-height: 16px;
+
+body {
+  padding: 40px;
+}
+
+summary {
+  align-items: center;
+  background: transparent;
+  list-style: none;
+
+  &::after {
+    content: '';
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+details {
+  width: 400px;
+}
+
+label {
+  font-size: @line-height;
+  vertical-align: middle;
+}
+
+input {
+  &[type=checkbox] {
+    margin: 0 @line-height;
+  }
+
+  &[type=number] {
+    width: 5 * @line-height;
+  }
+}

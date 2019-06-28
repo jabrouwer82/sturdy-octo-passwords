@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Password Generator",
+  "version": "0.1",
+
+  "description": "Generates highly configurable, secure passwords.",
+  "homepage_url": "https://github.com/jabrouwer82/sturdy-octo-passwords",
+
+  "icons": {
+    "48": "icons/key-48.png",
+    "96": "icons/key-96.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/key-96.png",
+    "theme_icons": [{
+      "light": "icons/key-96-light.png",
+      "dark": "icons/key-96.png",
+      "size": 32
+    }],
+    "default_title": "Password Generator",
+    "default_popup": "html/generate.html"
+  }
+}

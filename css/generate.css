@@ -1,0 +1,27 @@
+body {
+  padding: 40px;
+}
+summary {
+  align-items: center;
+  background: transparent;
+  list-style: none;
+}
+summary::after {
+  content: '';
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details {
+  width: 400px;
+}
+label {
+  font-size: 16px;
+  vertical-align: middle;
+}
+input[type=checkbox] {
+  margin: 0 16px;
+}
+input[type=number] {
+  width: 80px;
+}
